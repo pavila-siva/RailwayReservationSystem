@@ -44,6 +44,7 @@
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             pictureBox1 = new PictureBox();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             guna2CircleButton1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2CircleButton1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2CircleButton1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2CircleButton1.FillColor = Color.ForestGreen;
+            guna2CircleButton1.FillColor = Color.LightSeaGreen;
             guna2CircleButton1.Font = new Font("Segoe UI", 9F);
             guna2CircleButton1.ForeColor = Color.White;
             guna2CircleButton1.Location = new Point(-123, -3);
@@ -103,24 +104,22 @@
             // 
             // label1
             // 
-            label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.DimGray;
-            label1.Location = new Point(126, 85);
+            label1.Location = new Point(134, 85);
             label1.Name = "label1";
-            label1.Size = new Size(126, 27);
+            label1.Size = new Size(140, 25);
             label1.TabIndex = 3;
             label1.Text = "Username";
             label1.Click += label1_Click;
             // 
             // label2
             // 
-            label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.DimGray;
             label2.Location = new Point(134, 134);
             label2.Name = "label2";
-            label2.Size = new Size(118, 27);
+            label2.Size = new Size(132, 25);
             label2.TabIndex = 4;
             label2.Text = "Password";
             // 
@@ -185,6 +184,17 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.DimGray;
+            label3.Location = new Point(431, 12);
+            label3.Name = "label3";
+            label3.Size = new Size(26, 27);
+            label3.TabIndex = 9;
+            label3.Text = "X";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -192,6 +202,7 @@
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(470, 254);
+            Controls.Add(label3);
             Controls.Add(pictureBox1);
             Controls.Add(guna2TextBox3);
             Controls.Add(guna2TextBox1);
@@ -217,5 +228,6 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private PictureBox pictureBox1;
+        private Label label3;
     }
 }
