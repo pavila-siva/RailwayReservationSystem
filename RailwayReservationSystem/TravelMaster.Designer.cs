@@ -286,6 +286,7 @@
             guna2Button2.Size = new Size(100, 35);
             guna2Button2.TabIndex = 52;
             guna2Button2.Text = "Add";
+            guna2Button2.Click += guna2Button2_Click;
             // 
             // guna2TextBox3
             // 

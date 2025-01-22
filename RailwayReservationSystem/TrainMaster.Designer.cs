@@ -51,19 +51,19 @@
             guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
+            TrNameTb = new Guna.UI2.WinForms.Guna2TextBox();
+            TrainCapTb = new Guna.UI2.WinForms.Guna2TextBox();
+            BusyRd = new RadioButton();
+            FreeRd = new RadioButton();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            TrainDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)TrainDGV).BeginInit();
             SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -134,81 +134,81 @@
             guna2HtmlLabel4.TabIndex = 7;
             guna2HtmlLabel4.Text = "Train Capacity";
             // 
-            // guna2TextBox1
+            // TrNameTb
             // 
-            guna2TextBox1.BackColor = Color.Transparent;
-            guna2TextBox1.BorderThickness = 0;
-            guna2TextBox1.CustomizableEdges = customizableEdges3;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(0, 123, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 12F);
-            guna2TextBox1.ForeColor = Color.FromArgb(51, 51, 51);
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(196, 80);
-            guna2TextBox1.Margin = new Padding(4, 6, 4, 6);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PasswordChar = '\0';
-            guna2TextBox1.PlaceholderText = "Enter train name";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2TextBox1.Size = new Size(200, 30);
-            guna2TextBox1.TabIndex = 8;
+            TrNameTb.BackColor = Color.Transparent;
+            TrNameTb.BorderThickness = 0;
+            TrNameTb.CustomizableEdges = customizableEdges3;
+            TrNameTb.DefaultText = "";
+            TrNameTb.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            TrNameTb.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            TrNameTb.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            TrNameTb.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            TrNameTb.FocusedState.BorderColor = Color.FromArgb(0, 123, 255);
+            TrNameTb.Font = new Font("Segoe UI", 12F);
+            TrNameTb.ForeColor = Color.FromArgb(51, 51, 51);
+            TrNameTb.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            TrNameTb.Location = new Point(196, 80);
+            TrNameTb.Margin = new Padding(4, 6, 4, 6);
+            TrNameTb.Name = "TrNameTb";
+            TrNameTb.PasswordChar = '\0';
+            TrNameTb.PlaceholderText = "Enter train name";
+            TrNameTb.SelectedText = "";
+            TrNameTb.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            TrNameTb.Size = new Size(200, 30);
+            TrNameTb.TabIndex = 8;
             // 
-            // guna2TextBox3
+            // TrainCapTb
             // 
-            guna2TextBox3.BackColor = Color.Transparent;
-            guna2TextBox3.BorderThickness = 0;
-            guna2TextBox3.CustomizableEdges = customizableEdges5;
-            guna2TextBox3.DefaultText = "";
-            guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox3.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox3.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(0, 123, 255);
-            guna2TextBox3.Font = new Font("Segoe UI", 12F);
-            guna2TextBox3.ForeColor = Color.FromArgb(51, 51, 51);
-            guna2TextBox3.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Location = new Point(196, 130);
-            guna2TextBox3.Margin = new Padding(4, 6, 4, 6);
-            guna2TextBox3.Name = "guna2TextBox3";
-            guna2TextBox3.PasswordChar = '\0';
-            guna2TextBox3.PlaceholderText = "Enter capacity";
-            guna2TextBox3.SelectedText = "";
-            guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2TextBox3.Size = new Size(200, 30);
-            guna2TextBox3.TabIndex = 10;
+            TrainCapTb.BackColor = Color.Transparent;
+            TrainCapTb.BorderThickness = 0;
+            TrainCapTb.CustomizableEdges = customizableEdges5;
+            TrainCapTb.DefaultText = "";
+            TrainCapTb.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            TrainCapTb.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            TrainCapTb.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            TrainCapTb.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            TrainCapTb.FocusedState.BorderColor = Color.FromArgb(0, 123, 255);
+            TrainCapTb.Font = new Font("Segoe UI", 12F);
+            TrainCapTb.ForeColor = Color.FromArgb(51, 51, 51);
+            TrainCapTb.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            TrainCapTb.Location = new Point(196, 130);
+            TrainCapTb.Margin = new Padding(4, 6, 4, 6);
+            TrainCapTb.Name = "TrainCapTb";
+            TrainCapTb.PasswordChar = '\0';
+            TrainCapTb.PlaceholderText = "Enter capacity";
+            TrainCapTb.SelectedText = "";
+            TrainCapTb.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            TrainCapTb.Size = new Size(200, 30);
+            TrainCapTb.TabIndex = 10;
             // 
-            // radioButton1
+            // BusyRd
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.BackColor = Color.Transparent;
-            radioButton1.Font = new Font("Segoe UI", 11F);
-            radioButton1.ForeColor = Color.FromArgb(51, 51, 51);
-            radioButton1.Location = new Point(180, 180);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(72, 29);
-            radioButton1.TabIndex = 13;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Busy";
-            radioButton1.UseVisualStyleBackColor = false;
+            BusyRd.AutoSize = true;
+            BusyRd.BackColor = Color.Transparent;
+            BusyRd.Font = new Font("Segoe UI", 11F);
+            BusyRd.ForeColor = Color.FromArgb(51, 51, 51);
+            BusyRd.Location = new Point(180, 180);
+            BusyRd.Name = "BusyRd";
+            BusyRd.Size = new Size(72, 29);
+            BusyRd.TabIndex = 13;
+            BusyRd.TabStop = true;
+            BusyRd.Text = "Busy";
+            BusyRd.UseVisualStyleBackColor = false;
             // 
-            // radioButton2
+            // FreeRd
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.BackColor = Color.Transparent;
-            radioButton2.Font = new Font("Segoe UI", 11F);
-            radioButton2.ForeColor = Color.FromArgb(51, 51, 51);
-            radioButton2.Location = new Point(260, 180);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(110, 29);
-            radioButton2.TabIndex = 14;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Available";
-            radioButton2.UseVisualStyleBackColor = false;
+            FreeRd.AutoSize = true;
+            FreeRd.BackColor = Color.Transparent;
+            FreeRd.Font = new Font("Segoe UI", 11F);
+            FreeRd.ForeColor = Color.FromArgb(51, 51, 51);
+            FreeRd.Location = new Point(260, 180);
+            FreeRd.Name = "FreeRd";
+            FreeRd.Size = new Size(110, 29);
+            FreeRd.TabIndex = 14;
+            FreeRd.TabStop = true;
+            FreeRd.Text = "Available";
+            FreeRd.UseVisualStyleBackColor = false;
             // 
             // guna2Button2
             // 
@@ -236,6 +236,7 @@
             guna2Button2.Size = new Size(100, 35);
             guna2Button2.TabIndex = 16;
             guna2Button2.Text = "Add";
+            guna2Button2.Click += guna2Button2_Click;
             // 
             // guna2Button1
             // 
@@ -263,6 +264,7 @@
             guna2Button1.Size = new Size(100, 35);
             guna2Button1.TabIndex = 17;
             guna2Button1.Text = "Reset";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // guna2Button3
             // 
@@ -290,6 +292,7 @@
             guna2Button3.Size = new Size(100, 35);
             guna2Button3.TabIndex = 18;
             guna2Button3.Text = "Delete";
+            guna2Button3.Click += guna2Button3_Click;
             // 
             // guna2Button4
             // 
@@ -317,12 +320,13 @@
             guna2Button4.Size = new Size(100, 35);
             guna2Button4.TabIndex = 19;
             guna2Button4.Text = "Edit";
+            guna2Button4.Click += guna2Button4_Click;
             // 
-            // guna2DataGridView1
+            // TrainDGV
             // 
             dataGridViewCellStyle1.BackColor = Color.White;
-            guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            guna2DataGridView1.BackgroundColor = Color.FromArgb(240, 244, 248);
+            TrainDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            TrainDGV.BackgroundColor = Color.FromArgb(240, 244, 248);
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
@@ -330,9 +334,9 @@
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            guna2DataGridView1.ColumnHeadersHeight = 4;
-            guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            TrainDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            TrainDGV.ColumnHeadersHeight = 4;
+            TrainDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
@@ -340,35 +344,36 @@
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            guna2DataGridView1.GridColor = Color.FromArgb(209, 213, 219);
-            guna2DataGridView1.Location = new Point(50, 306);
-            guna2DataGridView1.Name = "guna2DataGridView1";
-            guna2DataGridView1.RowHeadersVisible = false;
-            guna2DataGridView1.RowHeadersWidth = 51;
-            guna2DataGridView1.Size = new Size(430, 120);
-            guna2DataGridView1.TabIndex = 20;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.BackColor = Color.FromArgb(240, 244, 248);
-            guna2DataGridView1.ThemeStyle.GridColor = Color.FromArgb(209, 213, 219);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
-            guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
-            guna2DataGridView1.ThemeStyle.RowsStyle.Height = 29;
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            TrainDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            TrainDGV.GridColor = Color.FromArgb(209, 213, 219);
+            TrainDGV.Location = new Point(48, 306);
+            TrainDGV.Name = "TrainDGV";
+            TrainDGV.RowHeadersVisible = false;
+            TrainDGV.RowHeadersWidth = 51;
+            TrainDGV.Size = new Size(430, 158);
+            TrainDGV.TabIndex = 20;
+            TrainDGV.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            TrainDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            TrainDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            TrainDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            TrainDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            TrainDGV.ThemeStyle.BackColor = Color.FromArgb(240, 244, 248);
+            TrainDGV.ThemeStyle.GridColor = Color.FromArgb(209, 213, 219);
+            TrainDGV.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            TrainDGV.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            TrainDGV.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            TrainDGV.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            TrainDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            TrainDGV.ThemeStyle.HeaderStyle.Height = 4;
+            TrainDGV.ThemeStyle.ReadOnly = false;
+            TrainDGV.ThemeStyle.RowsStyle.BackColor = Color.White;
+            TrainDGV.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            TrainDGV.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            TrainDGV.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
+            TrainDGV.ThemeStyle.RowsStyle.Height = 29;
+            TrainDGV.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            TrainDGV.ThemeStyle.RowsStyle.SelectionForeColor = Color.Turquoise;
+            TrainDGV.CellContentClick += TrainDGV_CellContentClick;
             // 
             // guna2HtmlLabel6
             // 
@@ -380,6 +385,7 @@
             guna2HtmlLabel6.Size = new Size(23, 43);
             guna2HtmlLabel6.TabIndex = 21;
             guna2HtmlLabel6.Text = "X";
+            guna2HtmlLabel6.Click += guna2HtmlLabel6_Click;
             // 
             // guna2HtmlLabel8
             // 
@@ -400,15 +406,15 @@
             ClientSize = new Size(800, 500);
             Controls.Add(guna2HtmlLabel8);
             Controls.Add(guna2HtmlLabel6);
-            Controls.Add(guna2DataGridView1);
+            Controls.Add(TrainDGV);
             Controls.Add(guna2Button4);
             Controls.Add(guna2Button3);
             Controls.Add(guna2Button1);
             Controls.Add(guna2Button2);
-            Controls.Add(radioButton2);
-            Controls.Add(radioButton1);
-            Controls.Add(guna2TextBox3);
-            Controls.Add(guna2TextBox1);
+            Controls.Add(FreeRd);
+            Controls.Add(BusyRd);
+            Controls.Add(TrainCapTb);
+            Controls.Add(TrNameTb);
             Controls.Add(guna2HtmlLabel4);
             Controls.Add(guna2HtmlLabel3);
             Controls.Add(guna2HtmlLabel5);
@@ -422,7 +428,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)TrainDGV).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -435,15 +441,15 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
+        private Guna.UI2.WinForms.Guna2TextBox TrNameTb;
+        private Guna.UI2.WinForms.Guna2TextBox TrainCapTb;
+        private RadioButton BusyRd;
+        private RadioButton FreeRd;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2DataGridView TrainDGV;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
     }
