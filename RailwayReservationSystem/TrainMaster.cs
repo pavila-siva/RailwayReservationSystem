@@ -139,7 +139,7 @@ namespace RailwayReservationSystem
                 try
                 {
                     Con.Open();
-                    string Query = "update TRAINTBL set TrainName='"+TrNameTb.Text+"',TrainCap="+TrainCapTb.Text+",TrainSatus='"+TrStatus+"'where TrainId=" + key + ";";
+                    string Query = "update TRAINTBL set TrainName='" + TrNameTb.Text + "',TrainCap=" + TrainCapTb.Text + ",TrainSatus='" + TrStatus + "'where TrainId=" + key + ";";
                     SqlCommand cmd = new SqlCommand(Query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Train Updated Successfully");
@@ -151,6 +151,11 @@ namespace RailwayReservationSystem
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void TrNameTb_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

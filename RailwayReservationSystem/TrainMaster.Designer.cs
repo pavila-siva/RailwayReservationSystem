@@ -157,6 +157,7 @@
             TrNameTb.ShadowDecoration.CustomizableEdges = customizableEdges4;
             TrNameTb.Size = new Size(200, 30);
             TrNameTb.TabIndex = 8;
+            TrNameTb.TextChanged += TrNameTb_TextChanged;
             // 
             // TrainCapTb
             // 
