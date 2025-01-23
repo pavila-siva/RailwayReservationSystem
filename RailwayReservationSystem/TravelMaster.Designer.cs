@@ -444,6 +444,7 @@
             Name = "TravelMaster";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TravelMaster";
+            Load += TravelMaster_Load;
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)TravelDGV).EndInit();
             ResumeLayout(false);

@@ -40,7 +40,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CancellationMaster));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            TidCb = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -51,26 +54,28 @@
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            CancellationDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)CancellationDGV).BeginInit();
             SuspendLayout();
             // 
-            // guna2ComboBox2
+            // TidCb
             // 
-            guna2ComboBox2.BackColor = Color.Transparent;
-            guna2ComboBox2.CustomizableEdges = customizableEdges1;
-            guna2ComboBox2.DrawMode = DrawMode.OwnerDrawFixed;
-            guna2ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            guna2ComboBox2.FocusedColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox2.Font = new Font("Segoe UI", 10F);
-            guna2ComboBox2.ForeColor = Color.FromArgb(68, 88, 112);
-            guna2ComboBox2.ItemHeight = 30;
-            guna2ComboBox2.Location = new Point(360, 100);
-            guna2ComboBox2.Name = "guna2ComboBox2";
-            guna2ComboBox2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2ComboBox2.Size = new Size(221, 36);
-            guna2ComboBox2.TabIndex = 82;
+            TidCb.BackColor = Color.Transparent;
+            TidCb.CustomizableEdges = customizableEdges1;
+            TidCb.DrawMode = DrawMode.OwnerDrawFixed;
+            TidCb.DropDownStyle = ComboBoxStyle.DropDownList;
+            TidCb.FocusedColor = Color.FromArgb(94, 148, 255);
+            TidCb.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            TidCb.Font = new Font("Segoe UI", 10F);
+            TidCb.ForeColor = Color.FromArgb(68, 88, 112);
+            TidCb.ItemHeight = 30;
+            TidCb.Location = new Point(350, 100);
+            TidCb.Name = "TidCb";
+            TidCb.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            TidCb.Size = new Size(221, 36);
+            TidCb.TabIndex = 82;
             // 
             // guna2HtmlLabel7
             // 
@@ -81,6 +86,7 @@
             guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             guna2HtmlLabel7.Size = new Size(3, 2);
             guna2HtmlLabel7.TabIndex = 78;
+            guna2HtmlLabel7.Text = null;
             // 
             // guna2HtmlLabel6
             // 
@@ -92,6 +98,7 @@
             guna2HtmlLabel6.Size = new Size(23, 43);
             guna2HtmlLabel6.TabIndex = 77;
             guna2HtmlLabel6.Text = "X";
+            guna2HtmlLabel6.Click += guna2HtmlLabel6_Click;
             // 
             // guna2DataGridView1
             // 
@@ -161,14 +168,14 @@
             guna2Button1.ForeColor = Color.White;
             guna2Button1.HoverState.FillColor = Color.FromArgb(0, 86, 179);
             guna2Button1.HoverState.ForeColor = Color.LightGray;
-            guna2Button1.Location = new Point(400, 160);
+            guna2Button1.Location = new Point(423, 160);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.PressedColor = Color.MediumBlue;
             guna2Button1.ShadowDecoration.Color = Color.DarkGray;
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Button1.ShadowDecoration.Depth = 10;
             guna2Button1.ShadowDecoration.Enabled = true;
-            guna2Button1.Size = new Size(100, 35);
+            guna2Button1.Size = new Size(116, 35);
             guna2Button1.TabIndex = 73;
             guna2Button1.Text = "Reset";
             // 
@@ -188,14 +195,14 @@
             guna2Button2.ForeColor = Color.White;
             guna2Button2.HoverState.FillColor = Color.FromArgb(0, 86, 179);
             guna2Button2.HoverState.ForeColor = Color.LightGray;
-            guna2Button2.Location = new Point(250, 160);
+            guna2Button2.Location = new Point(236, 160);
             guna2Button2.Name = "guna2Button2";
             guna2Button2.PressedColor = Color.MediumBlue;
             guna2Button2.ShadowDecoration.Color = Color.DarkGray;
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2Button2.ShadowDecoration.Depth = 10;
             guna2Button2.ShadowDecoration.Enabled = true;
-            guna2Button2.Size = new Size(100, 35);
+            guna2Button2.Size = new Size(114, 35);
             guna2Button2.TabIndex = 72;
             guna2Button2.Text = "Cancel";
             guna2Button2.Click += guna2Button2_Click;
@@ -205,7 +212,7 @@
             guna2HtmlLabel5.BackColor = Color.Transparent;
             guna2HtmlLabel5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             guna2HtmlLabel5.ForeColor = Color.FromArgb(85, 85, 85);
-            guna2HtmlLabel5.Location = new Point(250, 100);
+            guna2HtmlLabel5.Location = new Point(219, 100);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             guna2HtmlLabel5.Size = new Size(85, 30);
             guna2HtmlLabel5.TabIndex = 68;
@@ -257,13 +264,66 @@
             guna2HtmlLabel8.TabIndex = 83;
             guna2HtmlLabel8.Text = "Designed by Pavila";
             // 
+            // CancellationDGV
+            // 
+            dataGridViewCellStyle4.BackColor = Color.White;
+            CancellationDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            CancellationDGV.BackgroundColor = Color.FromArgb(240, 244, 248);
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            dataGridViewCellStyle5.ForeColor = Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            CancellationDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            CancellationDGV.ColumnHeadersHeight = 35;
+            CancellationDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = Color.White;
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            dataGridViewCellStyle6.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
+            CancellationDGV.DefaultCellStyle = dataGridViewCellStyle6;
+            CancellationDGV.GridColor = Color.FromArgb(209, 213, 219);
+            CancellationDGV.Location = new Point(97, 218);
+            CancellationDGV.Name = "CancellationDGV";
+            CancellationDGV.RowHeadersVisible = false;
+            CancellationDGV.RowHeadersWidth = 51;
+            CancellationDGV.Size = new Size(599, 222);
+            CancellationDGV.TabIndex = 103;
+            CancellationDGV.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            CancellationDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            CancellationDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            CancellationDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            CancellationDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            CancellationDGV.ThemeStyle.BackColor = Color.FromArgb(240, 244, 248);
+            CancellationDGV.ThemeStyle.GridColor = Color.FromArgb(209, 213, 219);
+            CancellationDGV.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            CancellationDGV.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            CancellationDGV.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            CancellationDGV.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            CancellationDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            CancellationDGV.ThemeStyle.HeaderStyle.Height = 35;
+            CancellationDGV.ThemeStyle.ReadOnly = false;
+            CancellationDGV.ThemeStyle.RowsStyle.BackColor = Color.White;
+            CancellationDGV.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            CancellationDGV.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            CancellationDGV.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
+            CancellationDGV.ThemeStyle.RowsStyle.Height = 29;
+            CancellationDGV.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            CancellationDGV.ThemeStyle.RowsStyle.SelectionForeColor = Color.Turquoise;
+            // 
             // CancellationMaster
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
+            Controls.Add(CancellationDGV);
             Controls.Add(guna2HtmlLabel8);
-            Controls.Add(guna2ComboBox2);
+            Controls.Add(TidCb);
             Controls.Add(guna2HtmlLabel7);
             Controls.Add(guna2HtmlLabel6);
             Controls.Add(guna2DataGridView1);
@@ -279,12 +339,13 @@
             Text = "CancellationMaster";
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)CancellationDGV).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox TidCb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
@@ -295,5 +356,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        private Guna.UI2.WinForms.Guna2DataGridView CancellationDGV;
     }
 }

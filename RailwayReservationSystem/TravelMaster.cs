@@ -36,7 +36,7 @@ namespace RailwayReservationSystem
         {
             string TrStatus = "Busy";
             Con.Open();
-            SqlCommand cmd = new SqlCommand("select TrainId from TRAINTBL where TrainSatus='"+TrStatus+"'", Con);
+            SqlCommand cmd = new SqlCommand("select TrainId from TRAINTBL where TrainSatus='" + TrStatus + "'", Con);
             SqlDataReader rdr;
             rdr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
@@ -55,23 +55,23 @@ namespace RailwayReservationSystem
         private void ChangeStatus()
         {
             string TrStatus = "Busy";
-            
-                try
-                {
-                    Con.Open();
-                    string Query = "update TRAINTBL set  TrainSatus='" + TrStatus + "'where TrainId=" + TCode.SelectedValue.ToString() + ";";
-                    SqlCommand cmd = new SqlCommand(Query, Con);
-                    cmd.ExecuteNonQuery();
-                   // MessageBox.Show("Train Updated Successfully");
-                    Con.Close();
-                    populate();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+
+            try
+            {
+                Con.Open();
+                string Query = "update TRAINTBL set  TrainSatus='" + TrStatus + "'where TrainId=" + TCode.SelectedValue.ToString() + ";";
+                SqlCommand cmd = new SqlCommand(Query, Con);
+                cmd.ExecuteNonQuery();
+                // MessageBox.Show("Train Updated Successfully");
+                Con.Close();
+                populate();
             }
-        
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             if (Tcost.Text == "" || TCode.SelectedIndex == -1 || SrcCb.SelectedIndex == -1 || DestCb.SelectedIndex == -1)
@@ -156,6 +156,11 @@ namespace RailwayReservationSystem
             {
                 key = Convert.ToInt32(TravelDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
+        }
+
+        private void TravelMaster_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -30,9 +30,6 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -46,30 +43,27 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            PIdCb = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            TravelCb = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
+            ReservationDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ReservationDGV).BeginInit();
             SuspendLayout();
             // 
             // guna2HtmlLabel8
@@ -83,22 +77,23 @@
             guna2HtmlLabel8.TabIndex = 94;
             guna2HtmlLabel8.Text = "Designed by Pavila";
             // 
-            // guna2ComboBox2
+            // PIdCb
             // 
-            guna2ComboBox2.BackColor = Color.Transparent;
-            guna2ComboBox2.CustomizableEdges = customizableEdges1;
-            guna2ComboBox2.DrawMode = DrawMode.OwnerDrawFixed;
-            guna2ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            guna2ComboBox2.FocusedColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox2.Font = new Font("Segoe UI", 10F);
-            guna2ComboBox2.ForeColor = Color.FromArgb(68, 88, 112);
-            guna2ComboBox2.ItemHeight = 30;
-            guna2ComboBox2.Location = new Point(187, 96);
-            guna2ComboBox2.Name = "guna2ComboBox2";
-            guna2ComboBox2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2ComboBox2.Size = new Size(194, 36);
-            guna2ComboBox2.TabIndex = 93;
+            PIdCb.BackColor = Color.Transparent;
+            PIdCb.CustomizableEdges = customizableEdges1;
+            PIdCb.DrawMode = DrawMode.OwnerDrawFixed;
+            PIdCb.DropDownStyle = ComboBoxStyle.DropDownList;
+            PIdCb.FocusedColor = Color.FromArgb(94, 148, 255);
+            PIdCb.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            PIdCb.Font = new Font("Segoe UI", 10F);
+            PIdCb.ForeColor = Color.FromArgb(68, 88, 112);
+            PIdCb.ItemHeight = 30;
+            PIdCb.Location = new Point(187, 96);
+            PIdCb.Name = "PIdCb";
+            PIdCb.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            PIdCb.Size = new Size(194, 36);
+            PIdCb.TabIndex = 93;
+            PIdCb.SelectionChangeCommitted += PIdCb_SelectionChangeCommitted;
             // 
             // guna2HtmlLabel7
             // 
@@ -109,6 +104,7 @@
             guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             guna2HtmlLabel7.Size = new Size(3, 2);
             guna2HtmlLabel7.TabIndex = 92;
+            guna2HtmlLabel7.Text = null;
             // 
             // guna2HtmlLabel6
             // 
@@ -120,58 +116,7 @@
             guna2HtmlLabel6.Size = new Size(23, 43);
             guna2HtmlLabel6.TabIndex = 91;
             guna2HtmlLabel6.Text = "X";
-            // 
-            // guna2DataGridView1
-            // 
-            dataGridViewCellStyle1.BackColor = Color.White;
-            guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            guna2DataGridView1.BackgroundColor = Color.FromArgb(240, 244, 248);
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            guna2DataGridView1.ColumnHeadersHeight = 4;
-            guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            guna2DataGridView1.GridColor = Color.FromArgb(209, 213, 219);
-            guna2DataGridView1.Location = new Point(138, 235);
-            guna2DataGridView1.Name = "guna2DataGridView1";
-            guna2DataGridView1.RowHeadersVisible = false;
-            guna2DataGridView1.RowHeadersWidth = 51;
-            guna2DataGridView1.Size = new Size(533, 199);
-            guna2DataGridView1.TabIndex = 90;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.BackColor = Color.FromArgb(240, 244, 248);
-            guna2DataGridView1.ThemeStyle.GridColor = Color.FromArgb(209, 213, 219);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
-            guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
-            guna2DataGridView1.ThemeStyle.RowsStyle.Height = 29;
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            guna2HtmlLabel6.Click += guna2HtmlLabel6_Click;
             // 
             // guna2Button1
             // 
@@ -273,22 +218,23 @@
             guna2HtmlLabel1.TabIndex = 84;
             guna2HtmlLabel1.Text = "Remy Railways";
             // 
-            // guna2ComboBox1
+            // TravelCb
             // 
-            guna2ComboBox1.BackColor = Color.Transparent;
-            guna2ComboBox1.CustomizableEdges = customizableEdges9;
-            guna2ComboBox1.DrawMode = DrawMode.OwnerDrawFixed;
-            guna2ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            guna2ComboBox1.FocusedColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2ComboBox1.Font = new Font("Segoe UI", 10F);
-            guna2ComboBox1.ForeColor = Color.FromArgb(68, 88, 112);
-            guna2ComboBox1.ItemHeight = 30;
-            guna2ComboBox1.Location = new Point(528, 96);
-            guna2ComboBox1.Name = "guna2ComboBox1";
-            guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2ComboBox1.Size = new Size(194, 36);
-            guna2ComboBox1.TabIndex = 97;
+            TravelCb.BackColor = Color.Transparent;
+            TravelCb.CustomizableEdges = customizableEdges9;
+            TravelCb.DrawMode = DrawMode.OwnerDrawFixed;
+            TravelCb.DropDownStyle = ComboBoxStyle.DropDownList;
+            TravelCb.FocusedColor = Color.FromArgb(94, 148, 255);
+            TravelCb.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            TravelCb.Font = new Font("Segoe UI", 10F);
+            TravelCb.ForeColor = Color.FromArgb(68, 88, 112);
+            TravelCb.ItemHeight = 30;
+            TravelCb.Location = new Point(528, 96);
+            TravelCb.Name = "TravelCb";
+            TravelCb.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            TravelCb.Size = new Size(194, 36);
+            TravelCb.TabIndex = 97;
+            TravelCb.SelectionChangeCommitted += TravelCb_SelectionChangeCommitted;
             // 
             // guna2HtmlLabel3
             // 
@@ -299,6 +245,7 @@
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new Size(3, 2);
             guna2HtmlLabel3.TabIndex = 96;
+            guna2HtmlLabel3.Text = null;
             // 
             // guna2HtmlLabel4
             // 
@@ -311,67 +258,13 @@
             guna2HtmlLabel4.TabIndex = 95;
             guna2HtmlLabel4.Text = "Travel code";
             // 
-            // guna2Button4
-            // 
-            guna2Button4.BackColor = Color.Transparent;
-            guna2Button4.BorderColor = Color.White;
-            guna2Button4.BorderRadius = 12;
-            guna2Button4.BorderThickness = 2;
-            guna2Button4.CustomizableEdges = customizableEdges11;
-            guna2Button4.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button4.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button4.FillColor = Color.DodgerBlue;
-            guna2Button4.Font = new Font("Segoe UI", 9F);
-            guna2Button4.ForeColor = Color.White;
-            guna2Button4.HoverState.FillColor = Color.FromArgb(0, 86, 179);
-            guna2Button4.HoverState.ForeColor = Color.LightGray;
-            guna2Button4.Location = new Point(295, 161);
-            guna2Button4.Name = "guna2Button4";
-            guna2Button4.PressedColor = Color.MediumBlue;
-            guna2Button4.ShadowDecoration.Color = Color.DarkGray;
-            guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Button4.ShadowDecoration.Depth = 10;
-            guna2Button4.ShadowDecoration.Enabled = true;
-            guna2Button4.Size = new Size(100, 35);
-            guna2Button4.TabIndex = 101;
-            guna2Button4.Text = "Edit";
-            // 
-            // guna2Button3
-            // 
-            guna2Button3.BackColor = Color.Transparent;
-            guna2Button3.BorderColor = Color.White;
-            guna2Button3.BorderRadius = 12;
-            guna2Button3.BorderThickness = 2;
-            guna2Button3.CustomizableEdges = customizableEdges13;
-            guna2Button3.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button3.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button3.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button3.FillColor = Color.DodgerBlue;
-            guna2Button3.Font = new Font("Segoe UI", 9F);
-            guna2Button3.ForeColor = Color.White;
-            guna2Button3.HoverState.FillColor = Color.FromArgb(0, 86, 179);
-            guna2Button3.HoverState.ForeColor = Color.LightGray;
-            guna2Button3.Location = new Point(405, 161);
-            guna2Button3.Name = "guna2Button3";
-            guna2Button3.PressedColor = Color.MediumBlue;
-            guna2Button3.ShadowDecoration.Color = Color.DarkGray;
-            guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Button3.ShadowDecoration.Depth = 10;
-            guna2Button3.ShadowDecoration.Enabled = true;
-            guna2Button3.Size = new Size(100, 35);
-            guna2Button3.TabIndex = 100;
-            guna2Button3.Text = "Delete";
-            // 
             // guna2Button5
             // 
             guna2Button5.BackColor = Color.Transparent;
             guna2Button5.BorderColor = Color.White;
             guna2Button5.BorderRadius = 12;
             guna2Button5.BorderThickness = 2;
-            guna2Button5.CustomizableEdges = customizableEdges15;
+            guna2Button5.CustomizableEdges = customizableEdges11;
             guna2Button5.DisabledState.BorderColor = Color.DarkGray;
             guna2Button5.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button5.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -381,16 +274,16 @@
             guna2Button5.ForeColor = Color.White;
             guna2Button5.HoverState.FillColor = Color.FromArgb(0, 86, 179);
             guna2Button5.HoverState.ForeColor = Color.LightGray;
-            guna2Button5.Location = new Point(515, 161);
+            guna2Button5.Location = new Point(365, 425);
             guna2Button5.Name = "guna2Button5";
             guna2Button5.PressedColor = Color.MediumBlue;
             guna2Button5.ShadowDecoration.Color = Color.DarkGray;
-            guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2Button5.ShadowDecoration.Depth = 10;
             guna2Button5.ShadowDecoration.Enabled = true;
             guna2Button5.Size = new Size(100, 35);
             guna2Button5.TabIndex = 99;
-            guna2Button5.Text = "Reset";
+            guna2Button5.Text = "Back";
             // 
             // guna2Button6
             // 
@@ -398,7 +291,7 @@
             guna2Button6.BorderColor = Color.White;
             guna2Button6.BorderRadius = 12;
             guna2Button6.BorderThickness = 2;
-            guna2Button6.CustomizableEdges = customizableEdges17;
+            guna2Button6.CustomizableEdges = customizableEdges13;
             guna2Button6.DisabledState.BorderColor = Color.DarkGray;
             guna2Button6.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button6.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -408,34 +301,85 @@
             guna2Button6.ForeColor = Color.White;
             guna2Button6.HoverState.FillColor = Color.FromArgb(0, 86, 179);
             guna2Button6.HoverState.ForeColor = Color.LightGray;
-            guna2Button6.Location = new Point(185, 161);
+            guna2Button6.Location = new Point(305, 152);
             guna2Button6.Name = "guna2Button6";
             guna2Button6.PressedColor = Color.MediumBlue;
             guna2Button6.ShadowDecoration.Color = Color.DarkGray;
-            guna2Button6.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            guna2Button6.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2Button6.ShadowDecoration.Depth = 10;
             guna2Button6.ShadowDecoration.Enabled = true;
-            guna2Button6.Size = new Size(100, 35);
+            guna2Button6.Size = new Size(217, 35);
             guna2Button6.TabIndex = 98;
-            guna2Button6.Text = "Add";
+            guna2Button6.Text = "Add Reservation";
+            guna2Button6.Click += guna2Button6_Click;
+            // 
+            // ReservationDGV
+            // 
+            dataGridViewCellStyle1.BackColor = Color.White;
+            ReservationDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            ReservationDGV.BackgroundColor = Color.FromArgb(240, 244, 248);
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            ReservationDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            ReservationDGV.ColumnHeadersHeight = 35;
+            ReservationDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            ReservationDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            ReservationDGV.GridColor = Color.FromArgb(209, 213, 219);
+            ReservationDGV.Location = new Point(19, 193);
+            ReservationDGV.Name = "ReservationDGV";
+            ReservationDGV.RowHeadersVisible = false;
+            ReservationDGV.RowHeadersWidth = 51;
+            ReservationDGV.Size = new Size(770, 222);
+            ReservationDGV.TabIndex = 102;
+            ReservationDGV.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            ReservationDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            ReservationDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            ReservationDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            ReservationDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            ReservationDGV.ThemeStyle.BackColor = Color.FromArgb(240, 244, 248);
+            ReservationDGV.ThemeStyle.GridColor = Color.FromArgb(209, 213, 219);
+            ReservationDGV.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            ReservationDGV.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            ReservationDGV.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            ReservationDGV.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            ReservationDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            ReservationDGV.ThemeStyle.HeaderStyle.Height = 35;
+            ReservationDGV.ThemeStyle.ReadOnly = false;
+            ReservationDGV.ThemeStyle.RowsStyle.BackColor = Color.White;
+            ReservationDGV.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            ReservationDGV.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            ReservationDGV.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
+            ReservationDGV.ThemeStyle.RowsStyle.Height = 29;
+            ReservationDGV.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            ReservationDGV.ThemeStyle.RowsStyle.SelectionForeColor = Color.Turquoise;
             // 
             // ReservationMaster
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
-            Controls.Add(guna2Button4);
-            Controls.Add(guna2Button3);
+            Controls.Add(ReservationDGV);
             Controls.Add(guna2Button5);
             Controls.Add(guna2Button6);
-            Controls.Add(guna2ComboBox1);
+            Controls.Add(TravelCb);
             Controls.Add(guna2HtmlLabel3);
             Controls.Add(guna2HtmlLabel4);
             Controls.Add(guna2HtmlLabel8);
-            Controls.Add(guna2ComboBox2);
+            Controls.Add(PIdCb);
             Controls.Add(guna2HtmlLabel7);
             Controls.Add(guna2HtmlLabel6);
-            Controls.Add(guna2DataGridView1);
             Controls.Add(guna2Button1);
             Controls.Add(guna2Button2);
             Controls.Add(guna2HtmlLabel5);
@@ -446,8 +390,8 @@
             Name = "ReservationMaster";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ReservationMaster";
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ReservationDGV).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -455,22 +399,20 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox PIdCb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox TravelCb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2DataGridView ReservationDGV;
     }
 }
