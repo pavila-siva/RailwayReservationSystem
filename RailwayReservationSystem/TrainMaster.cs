@@ -157,5 +157,12 @@ namespace RailwayReservationSystem
         {
 
         }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            MainForm Main = new MainForm();
+            Main.Show();
+            this.Hide();
+        }
     }
 }

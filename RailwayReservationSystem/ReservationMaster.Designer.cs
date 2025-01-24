@@ -284,6 +284,7 @@
             guna2Button5.Size = new Size(100, 35);
             guna2Button5.TabIndex = 99;
             guna2Button5.Text = "Back";
+            guna2Button5.Click += guna2Button5_Click;
             // 
             // guna2Button6
             // 
@@ -320,7 +321,7 @@
             ReservationDGV.BackgroundColor = Color.FromArgb(240, 244, 248);
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
@@ -330,7 +331,7 @@
             ReservationDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
             dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
@@ -339,6 +340,7 @@
             ReservationDGV.GridColor = Color.FromArgb(209, 213, 219);
             ReservationDGV.Location = new Point(19, 193);
             ReservationDGV.Name = "ReservationDGV";
+            ReservationDGV.ReadOnly = true;
             ReservationDGV.RowHeadersVisible = false;
             ReservationDGV.RowHeadersWidth = 51;
             ReservationDGV.Size = new Size(770, 222);
@@ -356,7 +358,7 @@
             ReservationDGV.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             ReservationDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             ReservationDGV.ThemeStyle.HeaderStyle.Height = 35;
-            ReservationDGV.ThemeStyle.ReadOnly = false;
+            ReservationDGV.ThemeStyle.ReadOnly = true;
             ReservationDGV.ThemeStyle.RowsStyle.BackColor = Color.White;
             ReservationDGV.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             ReservationDGV.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Underline);

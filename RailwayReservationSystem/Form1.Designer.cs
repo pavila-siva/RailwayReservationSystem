@@ -41,8 +41,8 @@
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             label1 = new Label();
             label2 = new Label();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            UnameTb = new Guna.UI2.WinForms.Guna2TextBox();
+            PassTb = new Guna.UI2.WinForms.Guna2TextBox();
             pictureBox1 = new PictureBox();
             label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -101,12 +101,13 @@
             guna2Button1.Size = new Size(156, 39);
             guna2Button1.TabIndex = 2;
             guna2Button1.Text = "login";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // label1
             // 
             label1.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.DimGray;
-            label1.Location = new Point(134, 85);
+            label1.Location = new Point(134, 87);
             label1.Name = "label1";
             label1.Size = new Size(140, 25);
             label1.TabIndex = 3;
@@ -117,59 +118,59 @@
             // 
             label2.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.DimGray;
-            label2.Location = new Point(134, 134);
+            label2.Location = new Point(134, 136);
             label2.Name = "label2";
-            label2.Size = new Size(132, 25);
+            label2.Size = new Size(111, 25);
             label2.TabIndex = 4;
-            label2.Text = "Password";
+            label2.Text = "Phone";
             // 
-            // guna2TextBox1
+            // UnameTb
             // 
-            guna2TextBox1.BackColor = SystemColors.Window;
-            guna2TextBox1.BorderColor = Color.FromArgb(204, 204, 204);
-            guna2TextBox1.BorderRadius = 10;
-            guna2TextBox1.CustomizableEdges = customizableEdges4;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 9F);
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(261, 85);
-            guna2TextBox1.Margin = new Padding(3, 4, 3, 4);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PasswordChar = '\0';
-            guna2TextBox1.PlaceholderText = "Enter Username";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges5;
-            guna2TextBox1.Size = new Size(196, 27);
-            guna2TextBox1.TabIndex = 5;
+            UnameTb.BackColor = SystemColors.Window;
+            UnameTb.BorderColor = Color.FromArgb(204, 204, 204);
+            UnameTb.BorderRadius = 10;
+            UnameTb.CustomizableEdges = customizableEdges4;
+            UnameTb.DefaultText = "";
+            UnameTb.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            UnameTb.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            UnameTb.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            UnameTb.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            UnameTb.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            UnameTb.Font = new Font("Segoe UI", 9F);
+            UnameTb.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            UnameTb.Location = new Point(261, 85);
+            UnameTb.Margin = new Padding(3, 4, 3, 4);
+            UnameTb.Name = "UnameTb";
+            UnameTb.PasswordChar = '\0';
+            UnameTb.PlaceholderText = "Enter Username";
+            UnameTb.SelectedText = "";
+            UnameTb.ShadowDecoration.CustomizableEdges = customizableEdges5;
+            UnameTb.Size = new Size(196, 27);
+            UnameTb.TabIndex = 5;
             // 
-            // guna2TextBox3
+            // PassTb
             // 
-            guna2TextBox3.BackColor = SystemColors.Window;
-            guna2TextBox3.BorderColor = Color.FromArgb(204, 204, 204);
-            guna2TextBox3.BorderRadius = 10;
-            guna2TextBox3.CustomizableEdges = customizableEdges6;
-            guna2TextBox3.DefaultText = "";
-            guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox3.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox3.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Font = new Font("Segoe UI", 9F);
-            guna2TextBox3.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Location = new Point(261, 134);
-            guna2TextBox3.Margin = new Padding(3, 4, 3, 4);
-            guna2TextBox3.Name = "guna2TextBox3";
-            guna2TextBox3.PasswordChar = '\0';
-            guna2TextBox3.PlaceholderText = "Enter Password";
-            guna2TextBox3.SelectedText = "";
-            guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges7;
-            guna2TextBox3.Size = new Size(196, 27);
-            guna2TextBox3.TabIndex = 7;
+            PassTb.BackColor = SystemColors.Window;
+            PassTb.BorderColor = Color.FromArgb(204, 204, 204);
+            PassTb.BorderRadius = 10;
+            PassTb.CustomizableEdges = customizableEdges6;
+            PassTb.DefaultText = "";
+            PassTb.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            PassTb.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            PassTb.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            PassTb.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            PassTb.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            PassTb.Font = new Font("Segoe UI", 9F);
+            PassTb.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            PassTb.Location = new Point(261, 134);
+            PassTb.Margin = new Padding(3, 4, 3, 4);
+            PassTb.Name = "PassTb";
+            PassTb.PasswordChar = '\0';
+            PassTb.PlaceholderText = "Enter Phone Number";
+            PassTb.SelectedText = "";
+            PassTb.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            PassTb.Size = new Size(196, 27);
+            PassTb.TabIndex = 7;
             // 
             // pictureBox1
             // 
@@ -194,6 +195,7 @@
             label3.Size = new Size(26, 27);
             label3.TabIndex = 9;
             label3.Text = "X";
+            label3.Click += label3_Click;
             // 
             // Form1
             // 
@@ -204,8 +206,8 @@
             ClientSize = new Size(470, 254);
             Controls.Add(label3);
             Controls.Add(pictureBox1);
-            Controls.Add(guna2TextBox3);
-            Controls.Add(guna2TextBox1);
+            Controls.Add(PassTb);
+            Controls.Add(UnameTb);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(guna2Button1);
@@ -225,8 +227,8 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Label label1;
         private Label label2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox UnameTb;
+        private Guna.UI2.WinForms.Guna2TextBox PassTb;
         private PictureBox pictureBox1;
         private Label label3;
     }

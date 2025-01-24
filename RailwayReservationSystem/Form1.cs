@@ -21,5 +21,28 @@ namespace RailwayReservationSystem
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            if (UnameTb.Text == "" || PassTb.Text == "")
+            {
+                MessageBox.Show("Enter UserName and Phone Number");
+            }
+            else if (PassTb.Text.Length != 10)
+            {
+                MessageBox.Show("Wrong Phone number");
+            }
+            else
+            {
+                MainForm main = new MainForm();
+                main.Show();
+                this.Hide();
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

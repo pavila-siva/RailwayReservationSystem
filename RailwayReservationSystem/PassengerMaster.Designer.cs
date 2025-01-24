@@ -50,6 +50,8 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -71,6 +73,7 @@
             NatCb = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             PassengerDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PassengerDGV).BeginInit();
             SuspendLayout();
@@ -247,14 +250,14 @@
             guna2Button2.ForeColor = Color.White;
             guna2Button2.HoverState.FillColor = Color.FromArgb(0, 86, 179);
             guna2Button2.HoverState.ForeColor = Color.LightGray;
-            guna2Button2.Location = new Point(49, 282);
+            guna2Button2.Location = new Point(59, 248);
             guna2Button2.Name = "guna2Button2";
             guna2Button2.PressedColor = Color.MediumBlue;
             guna2Button2.ShadowDecoration.Color = Color.DarkGray;
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Button2.ShadowDecoration.Depth = 10;
             guna2Button2.ShadowDecoration.Enabled = true;
-            guna2Button2.Size = new Size(100, 35);
+            guna2Button2.Size = new Size(125, 35);
             guna2Button2.TabIndex = 32;
             guna2Button2.Text = "Add";
             guna2Button2.Click += guna2Button2_Click;
@@ -275,14 +278,14 @@
             guna2Button1.ForeColor = Color.White;
             guna2Button1.HoverState.FillColor = Color.FromArgb(0, 86, 179);
             guna2Button1.HoverState.ForeColor = Color.LightGray;
-            guna2Button1.Location = new Point(379, 282);
+            guna2Button1.Location = new Point(610, 248);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.PressedColor = Color.MediumBlue;
             guna2Button1.ShadowDecoration.Color = Color.DarkGray;
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2Button1.ShadowDecoration.Depth = 10;
             guna2Button1.ShadowDecoration.Enabled = true;
-            guna2Button1.Size = new Size(100, 35);
+            guna2Button1.Size = new Size(125, 35);
             guna2Button1.TabIndex = 33;
             guna2Button1.Text = "Reset";
             guna2Button1.Click += guna2Button1_Click;
@@ -303,14 +306,14 @@
             guna2Button3.ForeColor = Color.White;
             guna2Button3.HoverState.FillColor = Color.FromArgb(0, 86, 179);
             guna2Button3.HoverState.ForeColor = Color.LightGray;
-            guna2Button3.Location = new Point(269, 282);
+            guna2Button3.Location = new Point(424, 248);
             guna2Button3.Name = "guna2Button3";
             guna2Button3.PressedColor = Color.MediumBlue;
             guna2Button3.ShadowDecoration.Color = Color.DarkGray;
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2Button3.ShadowDecoration.Depth = 10;
             guna2Button3.ShadowDecoration.Enabled = true;
-            guna2Button3.Size = new Size(100, 35);
+            guna2Button3.Size = new Size(125, 35);
             guna2Button3.TabIndex = 34;
             guna2Button3.Text = "Delete";
             guna2Button3.Click += guna2Button3_Click;
@@ -331,14 +334,14 @@
             guna2Button4.ForeColor = Color.White;
             guna2Button4.HoverState.FillColor = Color.FromArgb(0, 86, 179);
             guna2Button4.HoverState.ForeColor = Color.LightGray;
-            guna2Button4.Location = new Point(159, 282);
+            guna2Button4.Location = new Point(242, 248);
             guna2Button4.Name = "guna2Button4";
             guna2Button4.PressedColor = Color.MediumBlue;
             guna2Button4.ShadowDecoration.Color = Color.DarkGray;
             guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2Button4.ShadowDecoration.Depth = 10;
             guna2Button4.ShadowDecoration.Enabled = true;
-            guna2Button4.Size = new Size(100, 35);
+            guna2Button4.Size = new Size(125, 35);
             guna2Button4.TabIndex = 35;
             guna2Button4.Text = "Edit";
             guna2Button4.Click += guna2Button4_Click;
@@ -425,28 +428,29 @@
             PassengerDGV.BackgroundColor = Color.FromArgb(240, 244, 248);
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = Color.White;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             PassengerDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            PassengerDGV.ColumnHeadersHeight = 4;
+            PassengerDGV.ColumnHeadersHeight = 35;
             PassengerDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
             dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             PassengerDGV.DefaultCellStyle = dataGridViewCellStyle3;
             PassengerDGV.GridColor = Color.FromArgb(209, 213, 219);
-            PassengerDGV.Location = new Point(49, 342);
+            PassengerDGV.Location = new Point(39, 289);
             PassengerDGV.Name = "PassengerDGV";
+            PassengerDGV.ReadOnly = true;
             PassengerDGV.RowHeadersVisible = false;
             PassengerDGV.RowHeadersWidth = 51;
-            PassengerDGV.Size = new Size(430, 122);
+            PassengerDGV.Size = new Size(709, 141);
             PassengerDGV.TabIndex = 85;
             PassengerDGV.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             PassengerDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -460,8 +464,8 @@
             PassengerDGV.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
             PassengerDGV.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             PassengerDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            PassengerDGV.ThemeStyle.HeaderStyle.Height = 4;
-            PassengerDGV.ThemeStyle.ReadOnly = false;
+            PassengerDGV.ThemeStyle.HeaderStyle.Height = 35;
+            PassengerDGV.ThemeStyle.ReadOnly = true;
             PassengerDGV.ThemeStyle.RowsStyle.BackColor = Color.White;
             PassengerDGV.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             PassengerDGV.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
@@ -471,11 +475,40 @@
             PassengerDGV.ThemeStyle.RowsStyle.SelectionForeColor = Color.Turquoise;
             PassengerDGV.CellContentClick += PassengerDGV_CellContentClick;
             // 
+            // guna2Button5
+            // 
+            guna2Button5.BackColor = Color.Transparent;
+            guna2Button5.BorderColor = Color.White;
+            guna2Button5.BorderRadius = 12;
+            guna2Button5.BorderThickness = 2;
+            guna2Button5.CustomizableEdges = customizableEdges19;
+            guna2Button5.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button5.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button5.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button5.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button5.FillColor = Color.DodgerBlue;
+            guna2Button5.Font = new Font("Segoe UI", 9F);
+            guna2Button5.ForeColor = Color.White;
+            guna2Button5.HoverState.FillColor = Color.FromArgb(0, 86, 179);
+            guna2Button5.HoverState.ForeColor = Color.LightGray;
+            guna2Button5.Location = new Point(352, 436);
+            guna2Button5.Name = "guna2Button5";
+            guna2Button5.PressedColor = Color.MediumBlue;
+            guna2Button5.ShadowDecoration.Color = Color.DarkGray;
+            guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            guna2Button5.ShadowDecoration.Depth = 10;
+            guna2Button5.ShadowDecoration.Enabled = true;
+            guna2Button5.Size = new Size(125, 35);
+            guna2Button5.TabIndex = 86;
+            guna2Button5.Text = "Back";
+            guna2Button5.Click += guna2Button5_Click;
+            // 
             // PassengerMaster
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 500);
+            Controls.Add(guna2Button5);
             Controls.Add(PassengerDGV);
             Controls.Add(guna2HtmlLabel9);
             Controls.Add(NatCb);
@@ -530,5 +563,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox NatCb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2DataGridView PassengerDGV;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
     }
 }

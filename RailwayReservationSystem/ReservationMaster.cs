@@ -88,7 +88,7 @@ namespace RailwayReservationSystem
             sda.Fill(dt);
             foreach (DataRow dr in dt.Rows)
             {
-               // Date = dr["TravDate"].ToString();
+                // Date = dr["TravDate"].ToString();
                 Date = Convert.ToDateTime(dr["TravDate"]).ToString("yyyy-MM-dd");
                 Src = dr["Src"].ToString();
                 Dest = dr["Dest"].ToString();
@@ -106,7 +106,7 @@ namespace RailwayReservationSystem
         private void PIdCb_SelectionChangeCommitted(object sender, EventArgs e)
         {
             GetPName();
-           // MessageBox.Show("Selected Passenger Name: " + pname); // Debugging
+            // MessageBox.Show("Selected Passenger Name: " + pname); // Debugging
         }
 
         private void TravelCb_SelectionChangeCommitted(object sender, EventArgs e)
@@ -126,13 +126,13 @@ namespace RailwayReservationSystem
                 try
                 {
                     Con.Open();
-                    string Query = "insert into RESERVATIONTBL values(" + PIdCb.SelectedValue.ToString() + ",'" + pname + "' ,'" + TravelCb.SelectedValue.ToString() + "','" + Date + "','" + Src + "','" + Dest + "',"+Cost+")";
+                    string Query = "insert into RESERVATIONTBL values(" + PIdCb.SelectedValue.ToString() + ",'" + pname + "' ,'" + TravelCb.SelectedValue.ToString() + "','" + Date + "','" + Src + "','" + Dest + "'," + Cost + ")";
                     SqlCommand cmd = new SqlCommand(Query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Reservation Accepted");
                     Con.Close();
                     populate();
-                   // Reset();
+                    // Reset();
                 }
                 catch (Exception ex)
                 {
@@ -140,6 +140,13 @@ namespace RailwayReservationSystem
                 }
             }
         }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            MainForm Main = new MainForm();
+            Main.Show();
+            this.Hide();
+        }
     }
-    }
+}
 

@@ -145,8 +145,8 @@ namespace RailwayReservationSystem
                 try
                 {
                     Con.Open();
-                   
-                    string Query = "update PASSENGERTBL set Pname='" + PnameTb.Text + "',PAdd='" + PaddressTb.Text + "',PGender='" + Gender + "', PNat='"+ NatCb.SelectedItem.ToString() + "',PPhone='"+ PPhoneTb.Text + "' where PId=" + key + ";";
+
+                    string Query = "update PASSENGERTBL set Pname='" + PnameTb.Text + "',PAdd='" + PaddressTb.Text + "',PGender='" + Gender + "', PNat='" + NatCb.SelectedItem.ToString() + "',PPhone='" + PPhoneTb.Text + "' where PId=" + key + ";";
                     SqlCommand cmd = new SqlCommand(Query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Passenger Updated Successfully");
@@ -159,6 +159,13 @@ namespace RailwayReservationSystem
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            MainForm Main = new MainForm();
+            Main.Show();
+            this.Hide();
         }
     }
 }

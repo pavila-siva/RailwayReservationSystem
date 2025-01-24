@@ -95,6 +95,12 @@ namespace RailwayReservationSystem
                 MessageBox.Show(ex.Message);
             }
         }
-        
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            MainForm Main = new MainForm();
+            Main.Show();
+            this.Hide();
+        }
     }
 }

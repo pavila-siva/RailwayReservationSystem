@@ -177,7 +177,8 @@
             guna2Button1.ShadowDecoration.Enabled = true;
             guna2Button1.Size = new Size(116, 35);
             guna2Button1.TabIndex = 73;
-            guna2Button1.Text = "Reset";
+            guna2Button1.Text = "Back";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // guna2Button2
             // 
@@ -271,7 +272,7 @@
             CancellationDGV.BackgroundColor = Color.FromArgb(240, 244, 248);
             dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             dataGridViewCellStyle5.ForeColor = Color.White;
             dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
@@ -281,7 +282,7 @@
             CancellationDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = Color.White;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
             dataGridViewCellStyle6.ForeColor = Color.FromArgb(71, 69, 94);
             dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(71, 69, 94);
@@ -290,6 +291,7 @@
             CancellationDGV.GridColor = Color.FromArgb(209, 213, 219);
             CancellationDGV.Location = new Point(97, 218);
             CancellationDGV.Name = "CancellationDGV";
+            CancellationDGV.ReadOnly = true;
             CancellationDGV.RowHeadersVisible = false;
             CancellationDGV.RowHeadersWidth = 51;
             CancellationDGV.Size = new Size(599, 222);
@@ -307,7 +309,7 @@
             CancellationDGV.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             CancellationDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             CancellationDGV.ThemeStyle.HeaderStyle.Height = 35;
-            CancellationDGV.ThemeStyle.ReadOnly = false;
+            CancellationDGV.ThemeStyle.ReadOnly = true;
             CancellationDGV.ThemeStyle.RowsStyle.BackColor = Color.White;
             CancellationDGV.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             CancellationDGV.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
